@@ -3,47 +3,452 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Anshika Sharma</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <meta name="description" content="codewithperry's Portfolio - Software Developer">
+    <title>codewithperry | Developer</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    <header>
-        <h2 class="logo">Anshika Sharma</h2>
-        <nav>
-            <ul>
-                <li><a href="#" class="active">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </nav>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#home"><span class="code-badge">&lt;/&gt;</span>codewithperry</a>
+                </div>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="about">
-        <div class="text-content">
-            <h1>About me</h1>
-            <p>
-                Nisl arcu, scelerisque neque ut. Tincidunt amet, tempor duis tortor neque auctor dis ipsum.
-                Pretium cras amet odio amet eleifend id sed cras sed. Aliquet risus posuere aliquet imperdiet sit.
-            </p>
-            <a href="#" class="resume-btn">Resume</a>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span class="highlight">codewithperry</span></h1>
+                    <h2 class="typed-text">I'm a <span id="typed"></span></h2>
+                    <p>Developer passionate about cloud solutions and innovative projects</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Contact Me</a>
+                        <a href="assets/resume/resume.pdf" class="btn btn-secondary" target="_blank">Download CV</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/profile.jpg" alt="codewithperry's Profile Picture">
+                </div>
+            </div>
         </div>
-        <div class="image-content">
-            <div class="image-wrapper">
-                <img src="your-image.jpg" alt="Anshika Sharma">
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/images/about.jpg" alt="codewithperry Working">
+                </div>
+                <div class="about-text">
+                    <h3>💫 Who am I?</h3>
+                    <p>I'm a passionate developer with expertise in cloud solutions and hosting environments. Currently focused on building innovative applications that solve real-world problems.</p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>🔭 I'm currently working on <strong>libralink</strong></span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>🌱 I'm currently learning <strong>C</strong></span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-comment-dots"></i>
+                            <span>💬 Ask me about <strong>hostings</strong></span>
+                        </div>
+                    </div>
+                    
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-title">Name:</span>
+                            <span class="info-value">codewithperry</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Email:</span>
+                            <span class="info-value">contact@codewithperry.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Availability:</span>
+                            <span class="info-value available">Available for collaboration</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/codewithperry" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/codewithperry" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://instagram.com/codewithperry_" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/@codewithperry" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://x.com/codewithperry" target="_blank" title="X (Twitter)"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="social-icons">
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-            <a href="#"><img src="email-icon.png" alt="Email"></a>
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tech Stack</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="tech-stack">
+                <!-- Cloud Services -->
+                <div class="tech-category">
+                    <h3>Cloud Services</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="fab fa-aws"></i>
+                            <h4>AWS</h4>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-microsoft"></i>
+                            <h4>Azure</h4>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-google"></i>
+                            <h4>GCP</h4>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-digital-ocean"></i>
+                            <h4>Digital Ocean</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Programming Languages -->
+                <div class="tech-category">
+                    <h3>Programming Languages</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="fas fa-code"></i>
+                            <h4>C</h4>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-js"></i>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-python"></i>
+                            <h4>Python</h4>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-java"></i>
+                            <h4>Java</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Web Development -->
+                <div class="tech-category">
+                    <h3>Web Development</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="fab fa-html5"></i>
+                            <h4>HTML5</h4>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <h4>CSS3</h4>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-react"></i>
+                            <h4>React</h4>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-node-js"></i>
+                            <h4>Node.js</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- DevOps & Tools -->
+                <div class="tech-category">
+                    <h3>DevOps & Tools</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="fab fa-docker"></i>
+                            <h4>Docker</h4>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-linux"></i>
+                            <h4>Linux</h4>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-git-alt"></i>
+                            <h4>Git</h4>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-server"></i>
+                            <h4>Hosting</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-description">
+                <p>My expertise spans across cloud infrastructure, web development, and DevOps practices. I'm constantly expanding my knowledge in these fields while maintaining a focus on delivering robust, scalable solutions.</p>
+            </div>
         </div>
-        <p>Anshika Sharma © 2021</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="projects-container">
+                <!-- Project Item 1 -->
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="assets/images/project1.jpg" alt="LibraLink Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/codewithperry/libralink" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>LibraLink</h3>
+                        <p>My current project. A platform connecting libraries and readers for a seamless book discovery experience.</p>
+                        <div class="project-tech">
+                            <span>Cloud</span>
+                            <span>Web</span>
+                            <span>API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Item 2 -->
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="assets/images/project2.jpg" alt="Hosting Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/codewithperry" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cloud Hosting Solution</h3>
+                        <p>A custom cloud hosting platform with automated deployment pipelines and scaling capabilities.</p>
+                        <div class="project-tech">
+                            <span>AWS</span>
+                            <span>Docker</span>
+                            <span>DevOps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog section" id="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Coding Tutorials</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="blog-intro">
+                <p>Welcome to my coding tutorials! Here I share tips, tricks, and detailed guides on cloud solutions, hosting, and development best practices.</p>
+            </div>
+            
+            <div class="blog-container">
+                <!-- Blog Item 1 -->
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="assets/images/blog1.jpg" alt="AWS Deployment Guide">
+                        <div class="blog-date">
+                            <span>24 Feb 2025</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Complete AWS Deployment Guide</h3>
+                        <p>Learn how to deploy scalable applications to AWS with step-by-step instructions for beginners.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Item 2 -->
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="assets/images/blog2.jpg" alt="Docker Containers">
+                        <div class="blog-date">
+                            <span>18 Feb 2025</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Docker Containers for Beginners</h3>
+                        <p>Getting started with Docker containers and understanding the basics of containerization.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Item 3 -->
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="assets/images/blog3.jpg" alt="CI/CD Pipeline">
+                        <div class="blog-date">
+                            <span>10 Feb 2025</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Building a CI/CD Pipeline</h3>
+                        <p>How to set up continuous integration and deployment for your development workflow.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="blog-cta">
+                <a href="#" class="btn btn-primary">View All Tutorials</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:contact@codewithperry.com">contact@codewithperry.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Remote</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/codewithperry" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/codewithperry" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://instagram.com/codewithperry_" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/@codewithperry" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://x.com/codewithperry" target="_blank" title="X (Twitter)"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                        <div id="formStatus"></div>
+                        <div class="form-note">
+                            <p>This is a simulation. To implement actual email sending, you would need to connect it to a backend service or use a third-party service like EmailJS, Formspree, or Netlify Forms.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3><span class="code-badge">&lt;/&gt;</span>codewithperry</h3>
+                    <p>Developer</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 codewithperry. All rights reserved.</p>
+                <p class="last-update">Last updated: <span id="lastUpdated">2025-02-27 15:24:21 UTC</span></p>
+            </div>
+        </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
